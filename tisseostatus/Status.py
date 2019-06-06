@@ -13,8 +13,7 @@ class Status(object):
     Line Status connection object
     """
     def __init__(self):
-        self.update_url = "http://cloud.tfl.gov.uk/TrackerNet/LineStatus"
-        self.xmlns = "{http://webservices.lul.co.uk/}"
+        self.update_url = "http://api.tisseo.fr/v1/lines.xml?key=19975efa-8e3b-4729-8db6-9d2751bf2ea8&displayMessages=1&displayOnlyDisrupted=1"
         self.lines = {}
         self.last_update = 0
         self.last_request = None
