@@ -2,20 +2,20 @@
 
 from distutils.core import setup
 
-setup(name='tubestatus',
-      version='0.2.0',
+setup(name='tisseostatus',
+      version='0.0.1',
       install_requires=[
           "requests >= 2.3.0",
       ],
-      description='Python interface to TFL\'s tube line status API',
+      description='Python interface to Tisséo\'s network and line status API',
       long_description='',
-      author='Jacob Tomlinson',
-      author_email='jacob@jacobtomlinson.co.uk',
-      maintainer='Jacob Tomlinson',
-      maintainer_email='jacob@jacobtomlinson.co.uk',
-      url='https://github.com/jacobtomlinson/tube-status',
+      author='Nicolas Bourasseau',
+      author_email='nicolas.bourasseau@boubou.io',
+      maintainer='Nicolas Bourasseau',
+      author_email='nicolas.bourasseau@boubou.io',
+      url='https://github.com/Imbuzi/tisseo-status',
       license='TBC',
-      packages=['tubestatus'],
+      packages=['tisseostatus'],
       classifiers=[
           'Development Status :: 3 - Alpha',
           'Programming Language :: Python :: 2.6',
