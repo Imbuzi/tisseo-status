@@ -28,14 +28,12 @@ class Status(object):
         root = et.fromstring(self.last_request.content)
         for child in root:
             line = Line()
-            line.id = child.find(self.xmlns + 'Line').get('ID')
-            line.name = child.find(self.xmlns + 'Line').get('Name')
-            line.status_code = child.find(self.xmlns + 'Status').get('ID')
-            line.status_details = child.get('StatusDetails')
-            line.css_class = child.find(self.xmlns + 'Status').get('CssClass')
-            line.description = child.find(self.xmlns + 'Status').get('Description')
-            line.is_active = child.find(self.xmlns + 'Status').get('IsActive')
-            self.lines[line.name] = line
+            line.id = child.find('line').get('id')
+            line.name = child.find('line').get('name')
+            line.short_name = child.find('line').get('short_name')
+            line.messages = child.findAll('message')
+            line.transportMode = child.find('transportMode').get('id')
+            self.lines[line.short_name] = line
 
     def get_status(self, line_code):
         self.update_status()
