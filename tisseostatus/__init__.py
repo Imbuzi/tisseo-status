@@ -1,7 +1,7 @@
-"""Python interface to TFL's tube line status API"""
+"""Python interface to Tisséo status API"""
 
-__version__ = "0.2.0"
-__author__ = "Jacob Tomlinson"
-__author_email__ = "jacob@jacobtomlinson.co.uk"
+__version__ = "0.0.1"
+__author__ = "Nicolas Bourasseau"
+__author_email__ = "nicolas.bourasseau@boubou.io"
 
 from .Status import Status
